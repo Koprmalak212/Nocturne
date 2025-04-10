@@ -28,7 +28,7 @@
     <div class="login-container">
         <h2>Welcome Back</h2>
         <img src="assets/logos/logo_dark-removebg.png" alt="Nocturne Logo" id="login-logo">
-        <form method="post" action="#">
+        <form method="post" action="login.php">
             <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
