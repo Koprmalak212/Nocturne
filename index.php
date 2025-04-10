@@ -27,8 +27,8 @@
 <div class="container">
     <div class="login-container">
         <h2>Welcome Back</h2>
-        <img src="logos/logo_dark-removebg.png" alt="Nocturne Logo" id="login-logo">
-        <form method="post" action="login/login-logic.php">
+        <img src="assets/logos/logo_dark-removebg.png" alt="Nocturne Logo" id="login-logo">
+        <form method="post" action="#">
             <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
@@ -38,7 +38,7 @@
                 <input type="password" id="password" name="password" required>
             </div>
             <button type="submit" class="login-btn">Login</button>
-            <p class="signup-link">Don't have an account? <a href="login/singup.php">Sign up</a></p>
+            <p class="signup-link">Don't have an account? <a href="singup.php">Sign up</a></p>
         </form>
     </div>
 </div>
