@@ -34,7 +34,7 @@
     <img src="assets/logos/logo_dark-removebg.png" alt="Nocturne Logo" id="login-logo">
 
     <!-- Sign-up form -->
-    <form>
+    <form method="post" action="sign_up.php">
         <!-- Username input field -->
         <div class="input-group">
             <label for="username">Username</label>
@@ -53,10 +53,10 @@
             <input type="password" id="password" name="password" required>
         </div>
 
-        <!-- Confirm password input field -->
+        <!-- Age Input input field -->
         <div class="input-group">
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
+            <label for="confirm-password">Date of Birth</label>
+            <input type="date" id="date" name="date" required>
         </div>
 
         <!-- Submit button for the form -->
