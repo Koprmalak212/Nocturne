@@ -386,4 +386,37 @@ body {
     }
 }
 
+/* ============================
+   Home Page Styling
+   ============================ */
 
+.homepage{
+    background: #1e1e1e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*logo positioning*/
+.homepage img{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    width: 10vw;
+
+}
+
+/*home container*/
+.home_container{
+    width: 75%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.54);
+}
