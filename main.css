@@ -44,14 +44,12 @@ body {
     animation: slideIn 0.8s ease-out forwards;
 
     /* Slight scaling effect when hovered */
-
     &:hover {
         transform: scale(1.02);
         transition: transform 0.3s ease-in-out;
     }
 
     /* Title styling */
-
     h2 {
         margin-bottom: 20px;
         font-size: 24px;
@@ -62,14 +60,12 @@ body {
     /* ============================
        Form Styling
        ============================ */
-
     form {
         .input-group {
             margin-bottom: 15px;
             text-align: left;
 
             /* Label styling */
-
             label {
                 display: block;
                 font-size: 14px;
@@ -79,7 +75,6 @@ body {
             }
 
             /* Input fields */
-
             input {
                 width: 100%;
                 padding: 12px;
@@ -92,7 +87,6 @@ body {
                 transition: all 0.3s;
 
                 /* Glowing effect when input is focused */
-
                 &:focus {
                     border-color: #00c6ff;
                     box-shadow: 0 0 10px rgba(0, 198, 255, 0.7);
@@ -101,11 +95,9 @@ body {
             }
         }
 
-
         /* ============================
            Animated Login Button
            ============================ */
-
         .login-btn {
             width: 100%;
             padding: 12px;
@@ -120,14 +112,12 @@ body {
             overflow: hidden;
 
             /* Slight scaling effect when hovered */
-
             &:hover {
                 background: linear-gradient(45deg, #0072ff, #00c6ff);
                 transform: scale(1.05);
             }
 
             /* Button click ripple effect */
-
             &::after {
                 content: "";
                 position: absolute;
@@ -152,7 +142,6 @@ body {
         /* ============================
            Sign-up Link Animation
            ============================ */
-
         .signup-link {
             margin-top: 15px;
             font-size: 14px;
@@ -163,14 +152,12 @@ body {
             animation: fadeInUp 1s ease-in-out 0.5s forwards;
 
             /* Link styling */
-
             a {
                 color: #00c6ff;
                 text-decoration: none;
                 transition: color 0.3s;
 
                 /* Color change on hover */
-
                 &:hover {
                     text-decoration: underline;
                     color: #66d9ff;
@@ -178,10 +165,6 @@ body {
             }
         }
     }
-}
-
-#login-logo {
-    width: 10vw;
 }
 
 /* ============================
@@ -253,7 +236,6 @@ body {
     animation: slideIn 0.8s ease-out forwards;
 
     /* Slight scaling effect when hovered */
-
     &:hover {
         transform: scale(1.02);
         transition: transform 0.3s ease-in-out;
@@ -269,14 +251,12 @@ body {
     /* ============================
        Form Styling
        ============================ */
-
     form {
         .input-group {
             margin-bottom: 15px;
             text-align: left;
 
             /* Label styling */
-
             label {
                 display: block;
                 font-size: 14px;
@@ -286,7 +266,6 @@ body {
             }
 
             /* Input fields */
-
             input {
                 width: 100%;
                 padding: 12px;
@@ -299,7 +278,6 @@ body {
                 transition: all 0.3s;
 
                 /* Glowing effect when input is focused */
-
                 &:focus {
                     border-color: #00c6ff;
                     box-shadow: 0 0 10px rgba(0, 198, 255, 0.7);
@@ -311,7 +289,6 @@ body {
         /* ============================
            Animated Signup Button
            ============================ */
-
         .signup-btn {
             width: 100%;
             padding: 12px;
@@ -326,14 +303,12 @@ body {
             overflow: hidden;
 
             /* Slight scaling effect when hovered */
-
             &:hover {
                 background: linear-gradient(45deg, #ee0979, #ff6a00);
                 transform: scale(1.05);
             }
 
             /* Button click ripple effect */
-
             &::after {
                 content: "";
                 position: absolute;
@@ -358,7 +333,6 @@ body {
         /* ============================
            Login Link Animation
            ============================ */
-
         .login-link {
             margin-top: 15px;
             font-size: 14px;
@@ -369,14 +343,12 @@ body {
             animation: fadeInUp 1s ease-in-out 0.5s forwards;
 
             /* Link styling */
-
             a {
                 color: #ff6a00;
                 text-decoration: none;
                 transition: color 0.3s;
 
                 /* Color change on hover */
-
                 &:hover {
                     text-decoration: underline;
                     color: #ff905a;
@@ -386,4 +358,184 @@ body {
     }
 }
 
+/* ============================
+   Home Page Styling
+   ============================ */
+.homepage {
+    background: #1e1e1e;
+    background-image: url("assets/home_background.png");
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/* logo positioning */
+.homepage img {
+    position: absolute;
+    top: 0vh;
+    left: 1vw;
+    width: 10vw;
+}
+
+/* home container */
+.home_container {
+    width: 75%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.54);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============================
+   Post Card Styling
+   ============================ */
+.post-container {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.post-card {
+    background-color: #323232;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 27, 133, 0.6);
+    width: 500px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.post-header {
+    margin-bottom: 10px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.user-id {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.post-text {
+    margin: 15px 0;
+    font-size: 1em;
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: #21aec8;
+}
+
+.post_maker {
+    background-color: #121212; /* dark dark gray */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    color: #ccc; /* light gray text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.create-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ececec; /* very light gray */
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.create-textarea {
+    width: 100%;
+    height: 150px;
+    background-color: #1e1e1e; /* slightly lighter dark */
+    border: 2px solid #333;
+    color: #eee;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.create-textarea::placeholder {
+    color: #555;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.submit-btn, .cancel-btn {
+    background-color: #222;
+    color: #ccc;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0a84ff; /* dark Gotham blue */
+    border-color: #0a84ff;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #5c5c5c;
+    border-color: #5c5c5c;
+    color: white;
+}
+
+.create-post-btn {
+    background-color: #1a1a1a;
+    color: #cccccc;
+    border: 2px solid #333333;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.create-post-btn:hover {
+    background-color: #0a84ff;
+    border-color: #0a84ff;
+    color: white;
+    box-shadow: 0 0 20px #0a84ff99;
+}
